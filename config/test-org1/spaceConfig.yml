@@ -1,0 +1,50 @@
+# org that is space belongs to
+org: test-org1
+
+# space name
+space: space1
+
+# # added in 1.0.9+ to allow renaming spaces
+# original-space: old-space1
+
+allow-ssh: yes
+
+# allow-ssh-until: "2019-01-13T18:09:16-07:00"
+
+space-manager:
+  # list of users that would be given space manager role (must already be a user created via cf create-user)
+  users:
+    - andy@knappster.de
+
+space-auditor:
+  users:
+    - andy@knappster.de
+
+space-developer:
+  users:
+    - andy@knappster.de
+
+# to enable custom quota at space level
+enable-space-quota: true
+# 10 GB limit
+memory-limit: 10240
+# unlimited
+instance-memory-limit: -1
+total-routes: 10
+# unlimited
+total-services: -1
+paid-service-plans-allowed: true
+
+enable-security-group: false
+
+enable-remove-users: true
+
+named-security-groups: []
+
+enable-unassign-security-group: true
+
+metadata:
+  labels:
+    foo: bar
+  annotations:
+    hello: world
