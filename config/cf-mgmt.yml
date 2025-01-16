@@ -1,0 +1,13 @@
+enable-delete-isolation-segments: false
+enable-unassign-security-groups: false
+skip-unassign-security-group-regex: ""
+running-security-groups: []
+staging-security-groups: []
+shared-domains: {}
+enable-remove-shared-domains: false
+metadata-prefix: ""
+use-metadata-prefix: false
+enable-service-access: false
+ignore-legacy-service-access: false
+service-access: []
+protected-users: []
