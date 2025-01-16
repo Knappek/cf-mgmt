@@ -1,0 +1,37 @@
+# org name
+org: test-org1
+
+org-billingmanager:
+  # list of users that would be given billing manager role (must already be a user created via cf create-user)
+  users:
+    - andy@knappster.de
+
+org-manager:
+  users:
+    - andy@knappster.de
+
+org-auditor:
+  users:
+    - andy@knappster.de
+
+# if you wish to enable custom org quotas
+enable-org-quota: true
+# 10 GB limit
+memory-limit: 10240
+# unlimited
+instance-memory-limit: -1
+total-routes: 10
+# unlimited
+total-services: -1
+paid-service-plans-allowed: true
+
+enable-remove-users: true
+
+private-domains: ["test.com", "test2.com"]
+enable-remove-private-domains: true/
+
+metadata:
+  labels:
+    foo: bar
+  annotations:
+    hello: world
