@@ -2,6 +2,7 @@ orgs:
 - test-org1
 - test-org2
 - test-org3
+- test-org4
 enable-delete-orgs: true
 protected_orgs:
 - ^system$

@@ -4,6 +4,7 @@ resources:
   source:
     uri: ((git_repo_uri))
     branch: ((git_repo_branch))
+    private_key: ((pipeline-git-repo-key.private_key))
     # only watch for changes in config directory
     paths: ["ci", "((config_dir))"]
 - name: time-trigger
