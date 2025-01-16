@@ -28,7 +28,7 @@ paid-service-plans-allowed: true
 enable-remove-users: true
 
 private-domains: ["test.com", "test2.com"]
-enable-remove-private-domains: true/
+enable-remove-private-domains: true
 
 metadata:
   labels:
